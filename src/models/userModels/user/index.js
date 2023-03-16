@@ -1,7 +1,8 @@
-const mongoose = require("mongoose")
+const mongoose = require("mongoose");
 
-const userSchema = mongoose.model("user", mongoose.Schema({
-
+const userSchema = mongoose.model(
+  "user",
+  mongoose.Schema({
     name: { type: String },
     email: { type: String },
     password: { type: String },
@@ -13,10 +14,9 @@ const userSchema = mongoose.model("user", mongoose.Schema({
     notification: { type: Array },
     city: { type: String },
     joiningDate: { type: String },
-    cart: { type: Array }
-
-}))
-
-
+    cart: { type: Array },
+    country: { type: String },
+  })
+);
 
 exports.userSchema = userSchema;

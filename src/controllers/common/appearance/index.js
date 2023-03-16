@@ -30,7 +30,7 @@ const createApperance = async (req, res) => {
 const getAppearance = async (req, res) => {
     try {
         const appearance = await appearanceSchema.find()
-        res.status(202).send(appearance[0])
+        res.status(200).send(appearance[0])
     } catch (error) {
         console.log(error)
     }
